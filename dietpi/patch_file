@@ -801,6 +801,8 @@ Type=oneshot
 RemainAfterExit=yes
 ExecStart=/usr/bin/transmission-daemon --config-dir /var/lib/transmission-daemon/info
 ExecStop=/usr/bin/killall -w transmission-daemon
+User=debian-transmission
+Group=debian-transmission
 StandardOutput=tty
 
 [Install]
